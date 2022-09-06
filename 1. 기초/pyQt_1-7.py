@@ -12,16 +12,16 @@ class MyApp(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        exitAction = QAction(QIcon('exit.png'), 'Exit', self)
+        exitAction = QAction(QIcon('../exit.png'), 'Exit', self)
         exitAction.setShortcut('Ctrl+Q')
         exitAction.setStatusTip('Exit application')
         exitAction.triggered.connect(qApp.quit)
 
-        editAction = QAction(QIcon('edit.png'), 'Edit', self)
+        editAction = QAction(QIcon('../edit.png'), 'Edit', self)
         editAction.setShortcut('Ctrl+W')
         editAction.setStatusTip('Edit application')
 
-        saveAction = QAction(QIcon('save.png'), 'Save', self)
+        saveAction = QAction(QIcon('../save.png'), 'Save', self)
         saveAction.setShortcut('Ctrl+E')
         saveAction.setStatusTip('Save application')
 

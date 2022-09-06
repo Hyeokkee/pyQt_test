@@ -18,7 +18,7 @@ class MyApp(QMainWindow):
         self.resize(1600,800)
 
         # 툴바, 각 내용별 아이콘, 이벤트 트리거 반영 필요
-        checkAction1 = QAction(QIcon('check.png'), 'check1', self)
+        checkAction1 = QAction(QIcon('../check.png'), 'check1', self)
         checkAction1.triggered.connect(qApp.beep())
 
         self.toolbar = self.addToolBar('check1')
